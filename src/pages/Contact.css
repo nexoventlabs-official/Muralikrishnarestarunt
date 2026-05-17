@@ -1,0 +1,280 @@
+/* 
+========================================================================
+   CONTACT US SPECIFIC PREMIUM STYLING SHEET
+========================================================================
+*/
+
+.contact-header {
+  background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop');
+}
+
+.contact-section {
+  background-color: var(--bg-dark);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contact-info-sec h2 {
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+}
+
+.contact-lead-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Info Cards List */
+.contact-details-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-detail-card {
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: var(--transition);
+}
+
+.contact-detail-card:hover {
+  border-color: rgba(197, 168, 92, 0.3);
+  transform: translateX(5px);
+}
+
+.contact-detail-card .icon {
+  margin-top: 2px;
+}
+
+.contact-detail-card h3 {
+  font-size: 1.05rem;
+  color: var(--white);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact-detail-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-detail-card .address-text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.email-anchor {
+  transition: var(--transition);
+}
+
+.email-anchor:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+/* Contact Form styling */
+.contact-form-panel {
+  padding: 40px;
+}
+
+.contact-form h3 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: var(--white);
+}
+
+.contact-form .form-subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.btn-send-message {
+  margin-top: 10px;
+}
+
+.contact-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+/* Success layout */
+.contact-success-state {
+  padding: 60px 20px;
+}
+
+.contact-success-state h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.contact-success-state p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-success-state .note {
+  font-size: 0.8rem;
+  color: var(--gold);
+  background: rgba(197, 168, 92, 0.05);
+  border: 1px solid rgba(197, 168, 92, 0.1);
+  padding: 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* Styled Embed Vector Map widget */
+.map-panel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.map-overlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.map-overlay-card {
+  padding: 16px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  max-width: 320px;
+  pointer-events: auto;
+  box-shadow: var(--shadow-lg), 0 0 20px rgba(197, 168, 92, 0.1);
+}
+
+.map-overlay-card h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.map-overlay-card p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.map-overlay-card .timing {
+  font-size: 0.7rem;
+  color: var(--gold);
+  display: block;
+  margin-top: 4px;
+}
+
+/* Vector Grid Map styling */
+.vector-grid-map {
+  width: 100%;
+  height: 100%;
+  background-color: #0b0b0b;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-grid-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(197, 168, 92, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(197, 168, 92, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+.map-center-dot {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.map-center-dot .dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--gold);
+  border: 2px solid var(--white);
+  border-radius: var(--radius-full);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  box-shadow: 0 0 10px var(--gold);
+}
+
+.map-center-dot .radar-ripple {
+  width: 40px;
+  height: 40px;
+  background: rgba(197, 168, 92, 0.2);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-full);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  animation: pulseGlow 2s infinite ease-out;
+  z-index: 1;
+}
+
+/* Responsiveness Media Queries */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .map-overlay {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form-panel {
+    padding: 24px 16px;
+  }
+  .map-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    max-width: 100%;
+  }
+  .map-overlay-card {
+    max-width: 100%;
+  }
+  .map-panel {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .vector-grid-map {
+    height: 250px;
+  }
+}

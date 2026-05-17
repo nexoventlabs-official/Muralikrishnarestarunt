@@ -1,0 +1,422 @@
+/* 
+========================================================================
+   ITEM DETAILS SPECIFIC PREMIUM STYLING SHEET
+========================================================================
+*/
+
+.item-details-page {
+  padding: 40px 0 80px;
+  background-color: var(--bg-dark);
+}
+
+.breadcrumb-nav {
+  margin-bottom: 24px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.back-link:hover {
+  color: var(--gold);
+}
+
+/* Master Details Card Split Panel */
+.details-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+/* Left Image Column */
+.details-image-sec {
+  padding: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.main-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
+}
+
+/* Nutritional Grid Row */
+.nutritional-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.nutri-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-sm);
+}
+
+.nutri-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutri-text .label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.nutri-text .val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* Right Information Column */
+.details-info-sec {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dish-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.details-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.details-info-sec .dish-name {
+  font-size: 2.6rem;
+  line-height: 1.15;
+}
+
+.love-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.love-btn:hover,
+.love-btn.loved {
+  color: var(--gold);
+  border-color: var(--gold);
+  background: rgba(197, 168, 92, 0.05);
+}
+
+/* Star Rating Row */
+.rating-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.rating-row .stars {
+  display: flex;
+  gap: 2px;
+}
+
+.rating-score {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.reviews-count {
+  text-decoration: underline;
+}
+
+.dish-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Ingredients Tags grid */
+.ingredients-section h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ingredients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ingredient-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+}
+
+/* Portion Selector Styling */
+.portion-selector-section h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.portion-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.portion-btn {
+  padding: 12px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.01);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.portion-btn:hover {
+  border-color: rgba(197, 168, 92, 0.3);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.portion-btn.active {
+  border-color: var(--gold);
+  background: rgba(197, 168, 92, 0.06);
+  box-shadow: 0 0 15px rgba(197, 168, 92, 0.1);
+}
+
+.portion-btn .portion-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--white);
+  display: block;
+}
+
+.portion-btn.active .portion-title {
+  color: var(--gold-light);
+}
+
+.portion-btn .portion-desc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Actions Row layout */
+.actions-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 24px;
+  margin-top: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.price-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.price-val {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  font-family: var(--font-heading);
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.cart-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.quantity-counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+  height: 48px;
+  overflow: hidden;
+}
+
+.counter-btn {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.counter-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--gold);
+}
+
+.counter-btn:disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.counter-val {
+  width: 36px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-add-cart-detail {
+  height: 48px;
+}
+
+/* Success added notification banner styling */
+.success-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(197, 168, 92, 0.08);
+  border: 1px solid rgba(197, 168, 92, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Recommended Section styling */
+.recommendations-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 60px;
+}
+
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .details-card {
+    grid-template-columns: 1fr;
+  }
+  .details-image-sec {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 30px;
+  }
+  .details-info-sec {
+    padding: 30px;
+  }
+  .recommendations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portion-options {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .actions-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cart-controls {
+    justify-content: space-between;
+  }
+  .btn-add-cart-detail {
+    flex-grow: 1;
+  }
+  .details-info-sec .dish-name {
+    font-size: 2rem;
+  }
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Item not found template */
+.item-not-found {
+  padding: 100px 20px;
+}
+.item-not-found h2 {
+  font-size: 2rem;
+  color: var(--white);
+}

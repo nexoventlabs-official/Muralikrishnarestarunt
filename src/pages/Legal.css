@@ -1,0 +1,139 @@
+/* 
+========================================================================
+   LEGAL PAGES SHARED STYLING SHEET
+========================================================================
+*/
+
+.legal-header {
+  background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop');
+}
+
+.legal-content-section {
+  background-color: var(--bg-dark);
+}
+
+.legal-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left Sticky Sidebar Box */
+.legal-summary-box {
+  padding: 30px;
+  position: sticky;
+  top: 100px;
+}
+
+.legal-summary-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.legal-summary-box p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.key-points {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 20px;
+}
+
+.kp-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Right Main Policy Text details */
+.legal-main-text {
+  padding: 40px;
+}
+
+.last-updated {
+  font-size: 0.8rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.legal-main-text h2 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-top: 40px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  padding-bottom: 8px;
+}
+
+.legal-main-text h2:first-of-type {
+  margin-top: 0;
+}
+
+.legal-main-text p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.legal-main-text ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-left: 10px;
+}
+
+.legal-main-text li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.legal-main-text li::before {
+  content: '♦';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.8rem;
+}
+
+.legal-main-text li strong {
+  color: var(--white);
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+/* Responsiveness Media Queries */
+@media (max-width: 900px) {
+  .legal-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .legal-summary-box {
+    position: relative;
+    top: 0;
+  }
+  .legal-main-text {
+    padding: 30px 20px;
+  }
+}
