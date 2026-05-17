@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Shield, Lock, Eye, Sparkles } from 'lucide-react';
 import './Legal.css'; // Shared legal pages styling sheet
 
-export default function PrivacyPolicy() {
+export default function LegalNotice() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);

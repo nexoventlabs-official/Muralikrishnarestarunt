@@ -11,7 +11,7 @@ import ItemDetails from './pages/ItemDetails';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+import LegalNotice from './pages/LegalNotice';
 import TermsConditions from './pages/TermsConditions';
 
 import './App.css';
@@ -33,7 +33,7 @@ export default function App() {
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/privacy-policy" element={<LegalNotice />} />
               <Route path="/terms-conditions" element={<TermsConditions />} />
             </Routes>
           </main>
